@@ -41,12 +41,9 @@
 <body>
 
   <!-- Navbar -->
-  <nav class="navbar navbar-dark bg-dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Animales</a>
-    </div>
-  </nav>
-
+  <?php   
+  include "Layout/Layout.php"
+?>  
   <h1>Animales Raros</h1>
 
 
@@ -82,7 +79,7 @@
 <!-- Button trigger modal -->
 <div class = "col text-center">
 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  Launch demo modal
+  Lista de registro
 </button>
 
 <!-- Modal -->
@@ -96,7 +93,20 @@
       <div class="modal-body">
         
       <table class="table table-dark table-striped-columns">
+      <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th sc-ope="col">Nombre</th>
+      <th scope="col">Apellido</th>
+      <th scope="col">Edad</th>
+      <th scope="col">Correo</th>
+      <th scope="col">Telefono</th>
+      <th scope="col">Editar</th>
+      <th scope="col">Eliminar</th>
 
+
+    </tr>
+  </thead>
 
 <?php
 include_once "Controlador/conexion.php";
@@ -112,30 +122,17 @@ if ($conexion){
   
 ?>  
 
-  <thead>
-    <tr>
-      <th scope="col">ID</th>
-      <th scope="col">Nombre</th>
-      <th scope="col">Apellido</th>
-      <th scope="col">Edad</th>
-      <th scope="col">Correo</th>
-      <th scope="col">Telefono</th>
-      <th scope="col">Editar</th>
-      <th scope="col">Eliminar</th>
-
-
-    </tr>
-  </thead>
+ 
   <tbody>
     <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-      <td>@mdo</td>
-      <td>@mdo</td>
-      <td>@mdo</td>
-      <td>@mdo</td>
+    <th scope="row"><?php $i?></th>
+    <td><?php echo $fila["Nombre"]; ?></td>
+	  <td><?php echo $fila["Apellido"]; ?></td>
+	  <td><?php echo $fila["Edad"]; ?></td>
+	  <td><?php echo $fila["Correo"]; ?></td>
+	  <td><?php echo $fila["Telefono"]; ?></td>
+	  <td><a href ="Update.php" type="button" class="btn btn-success">Editar</a></td>
+	  <td></td>
      
     </tr>
     
