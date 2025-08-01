@@ -26,14 +26,14 @@
       text-align: center;
       padding: 10px;
       margin-top: 20px;
-
+      
 
     }
 
     
    .carousel-inner img {
-      width: 200%;
-      height: 500px;
+      width: 600%;
+      height: 600px;
       object-fit: cover;
   }
   </style>
@@ -52,15 +52,15 @@
   <div id="carruselAnimales" class="carousel slide container" data-bs-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="ayeaye.jpg" class="d-block w-100" alt="Aye-Aye">
+        <img src="aye-ay.jpg" class="d-block w-100" alt="Aye-Aye">
       </div>
 
       <div class="carousel-item">
-        <img src="oka.jpeg" class="d-block w-100" alt="Okapi">
+        <img src="Ok.jpg" class="d-block w-100" alt="Okapi">
       </div>
 
       <div class="carousel-item">
-        <img src="labios.jpeg" class="d-block w-100" alt="pez_murcielago">
+        <img src="labi.jpg" class="d-block w-100" alt="pez_murcielago">
       </div>
 
 
@@ -132,6 +132,9 @@ if ($conexion){
 	  <td><?php echo $fila["Correo"]; ?></td>
 	  <td><?php echo $fila["Telefono"]; ?></td>
 	  <td><a href ="Update.php" type="button" class="btn btn-success">Editar</a></td>
+    <td><a href ="Update.php" type="button" class="btn btn-success">Eliminar</a></td>
+
+
 	  <td></td>
      
     </tr>
@@ -164,19 +167,24 @@ if ($conexion){
 
   <!-- Información principal -->
   <div class="container mt-4">
-    <div class="row">
-      <div class="col-md-8">
-        <h2>Lobo de crin</h2>
-        <img src="lobo.jpeg" alt="Lobo de crin" class="img-fluid">
-        <p>Un cánido sudamericano con patas largas.</p>
-      </div>
-      <div class="col-md-4">
-        <h2>Picozapato</h2>
-        <img src="picoza.jpeg" alt="Picozapato" class="img-fluid">
-        <p>Ave africana con un pico gigante.</p>
-      </div>
+  <div class="row">
+    <div class="col-md-8">
+      <h2>Lobo de crin</h2>
+      <img src="lobo.avif" alt="Lobo de crin"
+           class="img-fluid"
+           style="max-width: 400px; min-width: 200px; width: 100%; height: auto;">
+      <p>Un cánido sudamericano con patas largas.</p>
     </div>
-
+    <div class="col-md-4">
+      <h2>Picozapato</h2>
+      <img src="picozapato.avif" alt="Picozapato"
+           class="img-fluid"
+           style="max-width: 600px; min-width: 150px; width: 100%; height: auto;">
+      <p>Ave africana con un pico gigante.</p>
+    </div>
+  </div>
+</div>
+<!-- aqui necesito la ayuda de chatGPT-->
     <div class="row mt-3">
       <div class="col-md-6 info">
         <h4>¿Qué es un animal raro?</h4>
