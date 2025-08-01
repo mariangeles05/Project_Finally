@@ -2,6 +2,20 @@
 # Maria De Los Angeles Cedeño Castillo
 ### 100 palabras de lo que hace su aplicacion
 
+### Esta página web está diseñada para gestionar usuarios mediante un sistema CRUD (Crear, Leer, Actualizar, Eliminar). Los usuarios pueden registrarse proporcionando su nombre, apellido, edad y correo electrónico. Una vez registrados, pueden visualizar una lista completa de todos los usuarios registrados, con la posibilidad de editar o eliminar sus propios datos.
+
+Características principales:
+
+Registro de usuarios: Los visitantes pueden registrarse completando un formulario con su nombre, apellido, edad y correo electrónico.
+
+Visualización de usuarios: Los usuarios registrados pueden acceder a una lista que muestra todos los registros, incluyendo nombre, apellido, edad y correo electrónico.
+
+Edición de registros: Cada usuario puede editar sus propios datos accediendo a un formulario prellenado con su información actual.
+
+Eliminación de registros: Los usuarios pueden eliminar su cuenta, lo que eliminará todos sus datos de la base de datos.
+
+Este sistema permite una gestión eficiente de los usuarios, asegurando que cada individuo pueda mantener y actualizar su propia información de manera sencilla y segura.
+
 #Bakup base de datos
 
 ```sql
