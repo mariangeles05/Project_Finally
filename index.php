@@ -42,7 +42,7 @@
 
   <!-- Navbar -->
   <?php   
-  include "Layout/Layout.php"
+  include "Layout.php"
 ?>  
   <h1>Animales Raros</h1>
 
@@ -83,7 +83,7 @@
 </button>
 
 <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade col-12 " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-header">
@@ -125,14 +125,14 @@ if ($conexion){
  
   <tbody>
     <tr>
-    <th scope="row"><?php $i?></th>
+    <th scope="row"><?php echo $i ?></th>
     <td><?php echo $fila["Nombre"]; ?></td>
 	  <td><?php echo $fila["Apellido"]; ?></td>
 	  <td><?php echo $fila["Edad"]; ?></td>
 	  <td><?php echo $fila["Correo"]; ?></td>
 	  <td><?php echo $fila["Telefono"]; ?></td>
-	  <td><a href ="Update.php" type="button" class="btn btn-success">Editar</a></td>
-    <td><a href ="Update.php" type="button" class="btn btn-success">Eliminar</a></td>
+	  <td><a href ="Update.php?id=<?php echo $fila ["Id"] ?>" type="button" class="btn btn-success">Editar</a></td>
+    <td><a href ="Update.php" type="button" class="btn btn-danger">Eliminar</a></td>
 
 
 	  <td></td>
