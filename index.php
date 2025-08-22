@@ -132,7 +132,7 @@ if ($conexion){
 	  <td><?php echo $fila["Correo"]; ?></td>
 	  <td><?php echo $fila["Telefono"]; ?></td>
 	  <td><a href ="Update.php?id=<?php echo $fila ["Id"] ?>" type="button" class="btn btn-success">Editar</a></td>
-    <td><a href ="Update.php" type="button" class="btn btn-danger">Eliminar</a></td>
+    <td><a href="borrar.php?id=<?= $fila['Id'] ?>" class="btn btn-danger">Eliminar</a></td>
  
 
 	  <td></td>
